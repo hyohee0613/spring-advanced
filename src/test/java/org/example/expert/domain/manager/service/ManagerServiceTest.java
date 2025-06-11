@@ -57,7 +57,7 @@ class ManagerServiceTest {
         long managerUserId = 2L;
 
         Todo todo = new Todo();
-        ReflectionTestUtils.setField(todo, "user", null);
+        ReflectionTestUtils.setField(todo, "user", null);  //현재 todo.getUser()는 null 상태
 
         ManagerSaveRequest managerSaveRequest = new ManagerSaveRequest(managerUserId);
 
