@@ -46,6 +46,7 @@ class ManagerServiceTest {
 
         // when & then
         InvalidRequestException exception = assertThrows(InvalidRequestException.class, () -> managerService.getManagers(todoId));
+        assertEquals("Todo not found", exception.getMessage());
     }
 
     @Test
